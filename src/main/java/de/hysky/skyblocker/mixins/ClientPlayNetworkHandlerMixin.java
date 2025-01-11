@@ -21,7 +21,7 @@ import de.hysky.skyblocker.skyblock.end.EnderNodes;
 import de.hysky.skyblocker.skyblock.end.TheEnd;
 import de.hysky.skyblocker.skyblock.slayers.SlayerManager;
 import de.hysky.skyblocker.skyblock.slayers.boss.demonlord.FirePillarAnnouncer;
-import de.hysky.skyblocker.skyblock.tabhud.util.PlayerListMgr;
+import de.hysky.skyblocker.skyblock.tabhud.util.PlayerListManager;
 import de.hysky.skyblocker.skyblock.waypoint.MythologicalRitual;
 import de.hysky.skyblocker.utils.Utils;
 import net.minecraft.client.MinecraftClient;
@@ -123,7 +123,7 @@ public abstract class ClientPlayNetworkHandlerMixin extends ClientCommonNetworkH
 
 	@Inject(method = "onPlayerListHeader", at = @At(value = "INVOKE", target = "Lnet/minecraft/client/gui/hud/PlayerListHud;setFooter(Lnet/minecraft/text/Text;)V"))
 	private void skyblocker$updatePlayerListFooter(PlayerListHeaderS2CPacket packet, CallbackInfo ci) {
-		PlayerListMgr.updateFooter(packet.footer());
+		PlayerListManager.updateFooter(packet.footer());
 	}
 
 	@WrapWithCondition(method = "onPlayerList", at = @At(value = "INVOKE", target = "Lorg/slf4j/Logger;warn(Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;)V", remap = false))
@@ -154,7 +154,7 @@ public abstract class ClientPlayNetworkHandlerMixin extends ClientCommonNetworkH
 		return !(Utils.isOnHypixel() && ((Identifier) identifier).getNamespace().equals("badlion"));
 	}
 
-	@WrapWithCondition(method = {"onScoreboardScoreUpdate", "onScoreboardScoreReset"}, at = @At(value = "INVOKE", target = "Lorg/slf4j/Logger;warn(Ljava/lang/String;Ljava/lang/Object;)V", remap = false))
+	@WrapWithCondition(method = {"onScoreboardScoreUpdate", "onScoreboardScoreReset"}, at = @At(value = "INVOKE", target = "Lorg/slf4j/Logger;warn(Ljava/lang/String;Ljava/lang/Object;)V", remap = false), require = 2)
 	private boolean skyblocker$cancelUnknownScoreboardObjectiveWarnings(Logger instance, String message, Object objectiveName) {
 		return !Utils.isOnHypixel();
 	}
