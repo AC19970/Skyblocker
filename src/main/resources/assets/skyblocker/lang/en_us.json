@@ -258,6 +258,11 @@
   "skyblocker.config.farming.visitorHelper.showStacksInVisitorHelper.@Tooltip": "Show's the required items as (5 stacks + 45) rather than just a total number especially useful for ironman players.",
 
   "skyblocker.config.foraging": "Foraging",
+  "skyblocker.config.foraging.galatea": "Galatea",
+  "skyblocker.config.foraging.galatea.enableForestNodeHelper": "Enable Forest Node Helper",
+  "skyblocker.config.foraging.galatea.solveForestTemplePuzzle": "Solve Forest Temple Puzzle",
+  "skyblocker.config.foraging.galatea.solveForestTemplePuzzle.@Tooltip": "Displays the amount of times you need to rotate the terracotta blocks. For positive rotations you right click while for negative rotations you left click.",
+
   "skyblocker.config.foraging.hunting": "Hunting",
 
   "skyblocker.config.general": "General",
@@ -474,6 +479,8 @@
 
   "skyblocker.config.helpers.mythologicalRitual": "Mythological Ritual Helper",
   "skyblocker.config.helpers.mythologicalRitual.enableMythologicalRitualHelper": "Enable Mythological Ritual Helper",
+
+  "skyblocker.config.hunting": "Hunting",
 
   "skyblocker.config.chat": "Chat",
 
