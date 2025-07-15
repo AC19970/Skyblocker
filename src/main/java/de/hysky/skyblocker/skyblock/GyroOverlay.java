@@ -94,8 +94,7 @@ public class GyroOverlay {
 		OFF,
 		CIRCLE,
 		CIRCLE_OUTLINE,
-		SPHERE,
-		;
+		SPHERE;
 
 		@Override
 		public String asString() {
