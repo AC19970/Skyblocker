@@ -73,7 +73,7 @@ public class UIAndVisualsConfig {
 	public HealthBars healthBars = new HealthBars();
 
 	public GyroKineticWandOverlay gyroOverlay = new GyroKineticWandOverlay();
-	
+
 	public ItemPickup itemPickup = new ItemPickup();
 
 	public static class ChestValue {
@@ -399,7 +399,7 @@ public class UIAndVisualsConfig {
 
 		public int lifeTime = 3;
 	}
-	
+
 	public static class GyroKineticWandOverlay {
 
 		public GyroOverlay.Mode gyroOverlayMode = GyroOverlay.Mode.OFF;
