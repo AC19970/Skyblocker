@@ -73,7 +73,7 @@ public class UIAndVisualsConfig {
 	public HealthBars healthBars = new HealthBars();
 
 	public GyroKineticWandOverlay gyroOverlay = new GyroKineticWandOverlay();
-    
+	
 	public ItemPickup itemPickup = new ItemPickup();
 
 	public static class ChestValue {
@@ -82,11 +82,11 @@ public class UIAndVisualsConfig {
 		public Formatting color = Formatting.DARK_GREEN;
 
 		public Formatting incompleteColor = Formatting.BLUE;
-    }
+	}
 
 	public static class ItemCooldown {
 		public boolean enableItemCooldowns = true;
-    }
+	}
 
 	public static class SlotText {
 		public SlotTextMode slotTextMode = SlotTextMode.ENABLED;
