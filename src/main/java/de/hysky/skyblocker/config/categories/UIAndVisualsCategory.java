@@ -800,7 +800,7 @@ public class UIAndVisualsCategory {
 								.binding(defaults.uiAndVisuals.gyroOverlay.gyroOverlayMode,
 										() -> config.uiAndVisuals.gyroOverlay.gyroOverlayMode,
 										newValue -> config.uiAndVisuals.gyroOverlay.gyroOverlayMode = newValue)
-								.controller(ConfigUtils::createEnumCyclingListController)
+								.controller(ColourController.createBuilder().build())
 								.build())
 						.option(Option.<Color>createBuilder()
 								.name(Text.translatable("skyblocker.config.uiAndVisuals.gyroOverlay.Color"))
