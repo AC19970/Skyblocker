@@ -223,8 +223,8 @@ public class UIAndVisualsConfig {
 		}
     }
 
-	public static class FancyAuctionHouse {
-		public boolean enabled = true;
+    public static class FancyAuctionHouse {
+        public boolean enabled = false;
 
 		public boolean highlightCheapBIN = true;
     }
@@ -277,24 +277,22 @@ public class UIAndVisualsConfig {
 		public Waypoint.Type waypointType = Waypoint.Type.WAYPOINT;
     }
 
-
-
 	public static class TeleportOverlay {
 		public boolean enableTeleportOverlays = true;
 
 		public boolean showWhenInAir = false;
 
+        public boolean enableWeirdTransmission = false;
+
+        public boolean enableInstantTransmission = false;
+
 		public Color teleportOverlayColor = new Color(0x7F761594, true);
-
-		public boolean enableWeirdTransmission = true;
-
-		public boolean enableInstantTransmission = true;
 
 		public boolean enableEtherTransmission = true;
 
-		public boolean enableSinrecallTransmission = true;
+        public boolean enableSinrecallTransmission = false;
 
-		public boolean enableWitherImpact = true;
+        public boolean enableWitherImpact = false;
     }
 
 	public static class SmoothAOTE {
