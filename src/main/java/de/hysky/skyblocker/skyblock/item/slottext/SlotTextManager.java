@@ -63,7 +63,7 @@ public class SlotTextManager {
 			WardrobeKeybinds.INSTANCE,
 			new SkyblockGuideAdder(),
 			SameColorTerminal.INSTANCE,
-			AttributeLevelSlotText.INSTANCE
+			AttributeLevelSlotText.INSTANCE, 
 			new BestiaryLevelAdder()
 	};
 	private static final ArrayList<SlotTextAdder> currentScreenAdders = new ArrayList<>();
