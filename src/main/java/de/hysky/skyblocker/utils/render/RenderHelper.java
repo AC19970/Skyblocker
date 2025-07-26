@@ -404,15 +404,15 @@ public class RenderHelper {
 
 				// First triangle
 				buffer.vertex(positionMatrix,
-								Math.fma(x0 ,r0,(float) centre.getX()),
+								Math.fma(x0, r0, (float) centre.getX()),
 								(float) centre.getY() + y0,
-								Math.fma(z0,r0,(float) centre.getZ()))
+								Math.fma(z0, r0, (float) centre.getZ()))
 						.color(color);
 
 				buffer.vertex(positionMatrix,
-								Math.fma(x0 ,r1,(float) centre.getX()),
+								Math.fma(x0, r1, (float) centre.getX()),
 								(float) centre.getY() + y1,
-								Math.fma(z0,r1,(float) centre.getZ()))
+								Math.fma(z0, r1, (float) centre.getZ()))
 						.color(color);
 			}
 		}
