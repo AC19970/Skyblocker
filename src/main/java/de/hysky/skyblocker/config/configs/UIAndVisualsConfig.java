@@ -1,5 +1,6 @@
 package de.hysky.skyblocker.config.configs;
 
+import de.hysky.skyblocker.skyblock.GyroOverlay;
 import de.hysky.skyblocker.skyblock.item.slottext.SlotTextMode;
 import de.hysky.skyblocker.skyblock.tabhud.screenbuilder.ScreenBuilder;
 import de.hysky.skyblocker.utils.waypoint.Waypoint;
@@ -70,6 +71,8 @@ public class UIAndVisualsConfig {
     public CompactDamage compactDamage = new CompactDamage();
 
 	public HealthBars healthBars = new HealthBars();
+
+	public GyroKineticWandOverlay gyroOverlay = new GyroKineticWandOverlay();
 
 	public ItemPickup itemPickup = new ItemPickup();
 
@@ -178,23 +181,9 @@ public class UIAndVisualsConfig {
     }
 
 	public enum TabHudStyle {
-		/**
-		 * The minimal style, with no decorations, icons, or custom components,
-		 * rendered in a minimal rectangle background,
-		 * or no background at all if {@link TabHudConf#enableHudBackground} is false.
-		 */
 		MINIMAL,
-		/**
-		 * The simple style, with no decorations, icons, or custom components.
-		 */
 		SIMPLE,
-		/**
-		 * The classic style, with decorations such as icons but no custom components.
-		 */
 		CLASSIC,
-		/**
-		 * The default style, with all custom components and decorations in use.
-		 */
 		FANCY;
 
 		public boolean isMinimal() {
@@ -231,7 +220,6 @@ public class UIAndVisualsConfig {
 
 		public IntelligenceDisplay intelligenceDisplay = IntelligenceDisplay.ORIGINAL;
 
-        // Kept in for backwards compatibility, remove if needed
         @SuppressWarnings("DeprecatedIsStillUsed")
         @Deprecated
         public LegacyBarPositions barPositions = new LegacyBarPositions();
@@ -243,12 +231,6 @@ public class UIAndVisualsConfig {
 		IN_FRONT;
 	}
 
-    /**
-     * Backwards compat.
-     * <p>
-     * Used to load the legacy bar positions, which will not have an effect once the bars are saved in the new format at {@code /skyblocker/status_bars.json}.
-     * New bars do not need to be added here.
-     */
     @SuppressWarnings("DeprecatedIsStillUsed")
     @Deprecated
     public static class LegacyBarPositions {
@@ -261,9 +243,6 @@ public class UIAndVisualsConfig {
         public LegacyBarPosition experienceBarPosition = LegacyBarPosition.LAYER2;
     }
 
-    /**
-     * Backwards compat
-     */
     public enum LegacyBarPosition {
         LAYER1, LAYER2, RIGHT, NONE
     }
@@ -383,6 +362,12 @@ public class UIAndVisualsConfig {
 		public Color halfBarColor = new Color(0xFF4600);
 
 		public Color emptyBarColor = new Color(0xFF0000);
+	}
+
+	public static class GyroKineticWandOverlay {
+		public GyroOverlay.Mode gyroOverlayMode = GyroOverlay.Mode.OFF;
+
+		public Color gyroOverlayColor = new Color(0x7F761594, true);
 	}
 
 	public static class ItemPickup {
