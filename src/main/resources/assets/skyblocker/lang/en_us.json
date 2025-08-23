@@ -173,8 +173,6 @@
   "skyblocker.config.dungeons.map.mapScreen": "Dungeon Map & Score Placement Config...",
 
   "skyblocker.config.dungeons.mimicMessage": "Mimic Message",
-  "skyblocker.config.dungeons.mimicMessage.mimicMessage": "Mimic Message",
-  "skyblocker.config.dungeons.mimicMessage.mimicMessage.@Tooltip": "Message which will be sent in the chat upon killing a Mimic. Recommended to retain the default value.",
   "skyblocker.config.dungeons.mimicMessage.sendMimicMessage": "Enable Mimic Message",
   "skyblocker.config.dungeons.mimicMessage.sendMimicMessage.@Tooltip": "Sends a message in the chat upon killing a Mimic for other players' score calculation mods.",
 
@@ -182,8 +180,6 @@
   "skyblocker.config.dungeons.playerSecretsTracker.@Tooltip": "Tracks the number of secrets people in your dungeon run are doing.",
 
   "skyblocker.config.dungeons.princeMessage": "Prince Message",
-  "skyblocker.config.dungeons.princeMessage.princeMessage": "Prince Message",
-  "skyblocker.config.dungeons.princeMessage.princeMessage.@Tooltip": "Message which will be sent in the chat upon killing a Prince. Recommended to retain the default value.",
   "skyblocker.config.dungeons.princeMessage.sendPrinceMessage": "Enable Prince Message",
   "skyblocker.config.dungeons.princeMessage.sendPrinceMessage.@Tooltip": "Sends a message in the chat upon killing a Prince for other players' score calculation mods.",
 
@@ -316,7 +312,7 @@
   "skyblocker.config.foraging.galatea.seaLumieMinCount": "Minimum Sea Lumie Count to Highlight",
   "skyblocker.config.foraging.galatea.seaLumieMinCount.@Tooltip": "The minimum number of Sea Lumies that must be present within a block for it to be highlighted.",
   "skyblocker.config.foraging.galatea.enableTunerSolver": "Enable Tuner Solver",
-  "skyblocker.config.foraging.galatea.enableTunerSolver.@Tooltip": "Shows the required clicks in the Tune Frequency puzzle.",
+  "skyblocker.config.foraging.galatea.enableTunerSolver.@Tooltip": "Shows the required clicks for the Tune Frequency puzzle in the Moonglade Beacon.",
   "skyblocker.config.foraging.galatea.solveForestTemplePuzzle": "Solve Forest Temple Puzzle",
   "skyblocker.config.foraging.galatea.solveForestTemplePuzzle.@Tooltip": "Displays the amount of times you need to rotate the terracotta blocks. For positive rotations you right click while for negative rotations you left click.",
   "skyblocker.config.foraging.galatea.enableTreeBreakProgress": "Enable Tree Break Progress HUD",
@@ -1289,7 +1285,8 @@
   "skyblocker.museum.hud.sorter.ratio": "Coins/XP Ratio",
   "skyblocker.museum.hud.sorter.switch": "Click to switch sort!",
   "skyblocker.museum.hud.unknownPrice": "Unknown",
-  "skyblocker.museum.hud.wikiLookup": "Click on %s to open the wiki page!",
+  "skyblocker.museum.hud.wikiLookup": "Press %s to open the wiki page!",
+  "skyblocker.museum.hud.itemPriceLookup": "Press %s to search on the AH!",
   "skyblocker.museum.hud.xpReward": "Reward",
   "skyblocker.museum.attemptingResync": "Attempting to resync your museum item donations...",
   "skyblocker.museum.cannotResync": "Cannot resync your museum item donations! Note that you can only do this once every two days.",
