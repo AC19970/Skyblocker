@@ -15,7 +15,7 @@ import java.util.function.Supplier;
 public abstract class Component {
 	public final Supplier<Integer> ICO_DIM = () -> SkyblockerConfigManager.get().uiAndVisuals.tabHud.compactWidgets ? 12 : 16;
 	public static final int PAD_S = 2;
-	public static final int PAD_L = 2;
+	public static final int PAD_L = 4;
 
 	static final TextRenderer txtRend = MinecraftClient.getInstance().textRenderer;
 
