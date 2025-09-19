@@ -13,7 +13,7 @@ import net.minecraft.util.Identifier;
 public class SkyblockerRenderPipelines {
 	/** Copy of {@link RenderPipelines#DEBUG_FILLED_BOX} since Iris does not register debug_filled_box, and we cannot register vanilla pipelines safely */
 	public static final RenderPipeline FILLED = RenderPipelines.register(RenderPipeline.builder(RenderPipelines.POSITION_COLOR_SNIPPET)
-			.withLocation(Identifier.of(SkyblockerMod.NAMESPACE,"pipeline/debug_filled_box"))
+			.withLocation(Identifier.of(SkyblockerMod.NAMESPACE, "pipeline/debug_filled_box"))
 			.withVertexFormat(VertexFormats.POSITION_COLOR, DrawMode.TRIANGLE_STRIP)
 			.build());
 	/** Similar to {@link RenderPipelines#DEBUG_FILLED_BOX} */
