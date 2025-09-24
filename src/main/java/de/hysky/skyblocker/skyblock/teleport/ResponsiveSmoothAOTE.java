@@ -16,7 +16,7 @@ public class ResponsiveSmoothAOTE {
 	private static Vec3d lastPosition;
 	private static double lastProgress;
 
-	public static void PlayerGoingToTeleport() {
+	public static void playerGoingToTeleport() {
 		if (CLIENT.player == null) return;
 		//make sure teleport is enabled for held item
 		ItemStack heldItem = CLIENT.player.getMainHandStack();
@@ -26,7 +26,9 @@ public class ResponsiveSmoothAOTE {
 		if (distance == -1) {
 			return;
 		}
-		lastPosition = CLIENT.player.getEyePos();
+
+		Vec3d currentIntermediatePosition = getInterpolatedPos();
+		lastPosition = currentIntermediatePosition == null ? CLIENT.player.getEyePos() : currentIntermediatePosition;
 		lastProgress = 0;
 		startTime = System.currentTimeMillis();
 	}
